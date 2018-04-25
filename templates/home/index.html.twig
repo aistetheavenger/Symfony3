@@ -3,7 +3,8 @@
 {% block title %}Homepage - {{ parent() }}{% endblock %}
 
 {% block body %}
-    <div class="title">NFQ Akademija</div>
+    <div class="container">
+    <div class="jumbotron"><h1>NFQ Akademija</h1></div>
     <div class="jumbotron">
         <a class="btn btn-secondary btn-lg" href="{{ path('fos_user_security_login') }}">Login</a>
         <a class="btn btn-secondary btn-lg" href="{{ path('fos_user_registration_register') }}">Register</a>
@@ -13,5 +14,6 @@
     </div>
     <div class="jumbotron">
         <a class="btn btn-info btn-lg" href="{{ path('admin') }}">Our controller</a>
+    </div>
     </div>
 {% endblock %}
