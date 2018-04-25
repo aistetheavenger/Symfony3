@@ -15,3 +15,11 @@ fos_user:
     registration:
         form:
             type: App\Form\MyRegistrationFormType
+
+framework:
+    translator: ~
+    templating:
+            engines: ['twig', 'php']
+
+twig:
+    form_themes: ['bootstrap_4_horizontal_layout.html.twig']
